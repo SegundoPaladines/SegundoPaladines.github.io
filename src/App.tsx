@@ -1,15 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import { AppRouter } from './router';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Este será mi portafolio</p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <AppRouter/>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+//Acá se almacena como tal el contenido
+// El container se lo trae de @mui y es el contenedor principal
+//traemos tambien el botón
