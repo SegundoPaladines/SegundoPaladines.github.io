@@ -1,10 +1,18 @@
 import React from 'react';
-import { Container, Avatar, Paper, Typography } from '@mui/material';
-import { HeaderComponent, CertificatesList } from '../../components/';
+import { Container, Avatar} from '@mui/material';
+import { HeaderComponent, CertificatesList, Presentation } from '../../components/';
+import { Fondo } from '../../components/fondo/index';
 
 export const AboutPage: React.FC<{}> = () => {
   return (
-    <Container maxWidth="xl" sx={{ mt: 9 }}>
+    <Container maxWidth="xl" sx={{ 
+        mt: 9,
+    }}>
+
+      <Fondo
+        image="url('https://github.com/SegundoPaladines/SegundoPaladines.github.io/assets/99047308/637e4756-4866-405f-a6d1-e94645bee17f')" 
+      />
+
       <HeaderComponent
         title='Segundo Paladines'
         description='Welcome to my Presentation Site'
@@ -15,21 +23,23 @@ export const AboutPage: React.FC<{}> = () => {
             sx={{ width: 250, height: 250 }}
           />
         }
-    />
-    <Paper elevation={24} sx={{
-         background: "#1E8449",
-    }}>
-        <Typography fontSize={23} sx={{
-            margin:2,
-            padding:4,
-        }}>
-            I'm a Computer Systems Engineering student at the University of Nariño. 
-            I enjoy software development and aspire to work for an important software enterprise.
-        </Typography>
-    </Paper>
+      />
 
-    <CertificatesList />
-    
+      <div
+        style = {{
+          position:'relative',
+        }}
+      >
+        <Presentation />
+      </div>
+      <div
+         style = {{
+          position:'relative',
+        }}
+      >
+        <CertificatesList />
+      </div>
+        
     </Container>
   );
 }

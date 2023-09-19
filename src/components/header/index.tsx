@@ -27,10 +27,11 @@ export const HeaderComponent:React.FC <HeaderProps> = ({title, description, elem
     }, [title, caracterActual]);
 
     return (
-        <div>
-                <Box sx ={{
-                width: "100%",
-                height:  "150"
+        <div>  
+            <Box style ={{
+                width: '100%',
+                height: '100%',
+                position: 'relative',
             }}>
                 <Grid 
                     container 
@@ -60,8 +61,9 @@ export const HeaderComponent:React.FC <HeaderProps> = ({title, description, elem
                 </Grid>
             </Box>
             <Divider sx={{
-                mt:2.5,
-                borderBottomColor:"green"
+                    borderBottomColor:"green",
+                    position:'relative',
+                    mt:15,
             }} />
         </div>
     );
