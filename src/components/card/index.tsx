@@ -17,7 +17,7 @@ export const CardComponent: React.FC <CardPropts> = ({image, name, description, 
         <Card className='card'
             sx={{
                 margin:3,
-                boxShadow: "0px 10px 20px rgba(30, 132, 73  , 0.2)",
+                boxShadow: "0px 10px 20px rgba(30, 132, 73  , 0.4)",
             }}
         >
 

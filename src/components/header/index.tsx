@@ -22,7 +22,7 @@ export const HeaderComponent:React.FC <HeaderProps> = ({title, description, elem
             else{
                 clearInterval(intervalo);
             }
-        }, 100); //velocidad de escritura
+        }, 150); //velocidad de escritura
         return () => clearInterval(intervalo);
     }, [title, caracterActual]);
 
@@ -50,7 +50,7 @@ export const HeaderComponent:React.FC <HeaderProps> = ({title, description, elem
                             >
                             {element !== undefined && <Grid item sx={{mt:4}}>{element}</Grid>}
                             <Grid item>
-                                <Typography variant='h3' sx={{mt:2.5}}> {titulo} </Typography>
+                                <Typography variant='h4' sx={{mt:2.5}}> {titulo} </Typography>
                             </Grid>
                             <Grid item sx = {{mt:2.5}}>
                                 <Typography> {description} </Typography>
@@ -61,9 +61,11 @@ export const HeaderComponent:React.FC <HeaderProps> = ({title, description, elem
                 </Grid>
             </Box>
             <Divider sx={{
+                    marginLeft:"10%",
+                    marginRight:"10%",
                     borderBottomColor:"green",
                     position:'relative',
-                    mt:15,
+                    mt:2,
             }} />
         </div>
     );

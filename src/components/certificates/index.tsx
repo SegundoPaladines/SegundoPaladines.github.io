@@ -197,10 +197,10 @@ export const CertificatesList: React.FC<{}> = () => {
     }, [certificados, certificadoActual]);
 
   return (
-    <Container maxWidth="xl" sx={{ mt: 9}}>
+    <Container maxWidth="xl" sx={{ mt: 5}}>
       <div>
         <Box sx={{
-          mt: 5,
+          mt: 2,
         }}>
           <Grid container
             direction="row"
@@ -209,7 +209,7 @@ export const CertificatesList: React.FC<{}> = () => {
             }}
           >
             <Typography
-              variant='h4'
+              variant='h5'
               sx={{
                 borderBottom: "3px solid green"
               }}

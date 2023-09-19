@@ -20,7 +20,7 @@ export const AboutPage: React.FC<{}> = () => {
           <Avatar
             alt="Remy Sharp"
             src="https://user-images.githubusercontent.com/99047308/268836484-20cb032a-828f-4276-9343-e0abe2bf497c.png"
-            sx={{ width: 250, height: 250 }}
+            sx={{ width: 150, height: 150 }}
           />
         }
       />
@@ -31,6 +31,7 @@ export const AboutPage: React.FC<{}> = () => {
         }}
       >
         <Presentation />
+
       </div>
       <div
          style = {{
