@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, CardMedia, CardContent, Typography, Button, Divider } from '@mui/material';
+import './index.css'
 
 type CardPropts = {
     image:string;
@@ -13,8 +14,11 @@ const abrirUrl = (url: string) => {
 
 export const CardComponent: React.FC <CardPropts> = ({image, name, description, url}) =>{
     return (
-        <Card
-            sx={{margin:3}}
+        <Card className='card'
+            sx={{
+                margin:3,
+                boxShadow: "0px 16px 20px rgba(0, 0, 0, 0.5)"
+            }}
         >
 
             <CardMedia
