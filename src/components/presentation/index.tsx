@@ -5,9 +5,12 @@ export const Presentation: React.FC <{}> = () =>{
     return(
         <Paper elevation={23} sx={{
             background: "#1E8449",
-            boxShadow: "0px 16px 20px rgba(93, 109, 126 , 0.2)",
-            marginLeft:"20%",
-            marginRight:"20%",
+            boxShadow: "15px 15px 15px rgba(0, 0, 0, 0.9)",
+            paddingTop: 1,
+            paddingBottom: 1,
+            marginTop: 2,
+            marginLeft:"15%",
+            marginRight:"15%",
        }}>
            <Typography fontSize={15} sx={{
                margin:2,

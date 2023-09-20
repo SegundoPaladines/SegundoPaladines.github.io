@@ -11,7 +11,7 @@ export const Fondo: React.FC <FondoProps> = ({image}) => {
             <div
                 style={{
                     width: "100%",
-                    height: "70%",
+                    height: "100%",
                     position:'absolute',
                     top:0,
                     left:0,
@@ -30,14 +30,14 @@ export const Fondo: React.FC <FondoProps> = ({image}) => {
             ></div>
             <div
                 style={{
-                minHeight: '80vh',
-                content:"",
-                position:'absolute',
-                top:0,
-                left:0,
-                width:'100%',
-                height: '70%',
-                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                    minHeight: '80vh',
+                    content:"",
+                    position:'absolute',
+                    top:0,
+                    left:0,
+                    width:'100%',
+                    height:'100%',
+                    backgroundColor: 'rgba(0, 0, 0, 0.6)',
             }}
             ></div>
        </Container>

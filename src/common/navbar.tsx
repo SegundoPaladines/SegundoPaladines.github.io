@@ -1,5 +1,6 @@
 import React from "react";
 import { AppBar, Box, Toolbar, Container, Grid, Button, Typography, Stack } from '@mui/material';
+import './index.css';
 
 // construccion del menú bar
 //las constantes que se importan deben tener nombre comenzado con mayusculas
@@ -15,8 +16,15 @@ export const NavBar: React.FC <{}> = () => {
         //contenedor del menú de navegacion
         /*Se trae el App bar, dentro va el toolbar, luego un contendeodor 
             y finalmente el grid que contiene items */
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="sticky">
+        <Box sx={{ 
+            flexGrow: 1,
+        }}>
+            <AppBar position="fixed"
+                sx={{
+                    backgroundColor:'rgba(0, 0, 0, 0.5)',
+                    padding:1,
+                }}
+            >
                 <Toolbar>
                     <Container maxWidth = "xl">
                         <Grid 
@@ -32,8 +40,16 @@ export const NavBar: React.FC <{}> = () => {
                             </Grid>
                             <Grid item>
                                 <Stack direction="row" spacing= {3}>
-                                    <Button variant="outlined" onClick={() => gitHub()}>GitHub</Button>
-                                    <Button variant="outlined" onClick={() => linkedin()}>Linkedin</Button>
+                                    <Button 
+                                            className="btn-nav"
+                                            variant="outlined" 
+                                            onClick={() => gitHub()}
+                                    >GitHub</Button>
+                                    <Button 
+                                            className="btn-nav"
+                                            variant="outlined"
+                                            onClick={() => linkedin()}
+                                    >Linkedin</Button>
                                 </Stack>
                             </Grid>
                         </Grid>

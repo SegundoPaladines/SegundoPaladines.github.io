@@ -5,8 +5,8 @@ import { Fondo } from '../../components/fondo/index';
 
 export const AboutPage: React.FC<{}> = () => {
   return (
-    <Container maxWidth="xl" sx={{ 
-        mt: 9,
+    <Container  sx={{ 
+        mt: 18,
     }}>
 
       <Fondo
@@ -28,6 +28,7 @@ export const AboutPage: React.FC<{}> = () => {
       <div
         style = {{
           position:'relative',
+          zIndex:2,
         }}
       >
         <Presentation />
@@ -36,7 +37,10 @@ export const AboutPage: React.FC<{}> = () => {
 
       <div 
         style={{
+          backgroundColor:'rgba(81, 90, 90, 0.8)',
           position:'relative',
+          paddingTop:70,
+          marginTop:-60,
         }}
       >
         <Skills />
@@ -45,6 +49,7 @@ export const AboutPage: React.FC<{}> = () => {
 
       <div
          style = {{
+          backgroundColor:'rgba(81, 90, 90, 0.8)',
           position:'relative',
         }}
       >

@@ -10,7 +10,7 @@ type ThemeProp = {
 export enum themePalette{
     //colores
     BG = '#12181b',
-    LIME = '#C8FA5F',
+    LIME = '#FFF',
     //fuentes
     FONT_GLOBAL = "'JetBrains Mono', monospace",
 }
@@ -28,7 +28,7 @@ const theme = createTheme ({
         //color por defecto del botón primary
         primary:{
             main: themePalette.LIME,
-        }
+        },
     },
     //tipografia del citio en general
     typography:{
@@ -46,7 +46,7 @@ const theme = createTheme ({
                     //quitar el boxshadow
                     boxShadow: "none",
                     //border radius
-                    borderRadius: "0.5em",
+                    borderRadius: "0.5rem",
                     //tamaño del boton pues
                     width: "100%",
                     //padding

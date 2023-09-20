@@ -6,7 +6,8 @@ export const Skills: React.FC <{}> = () => {
     return (
         <Container>
             <Box sx={{
-              mt: 5,
+              paddingTop: 8,
+              marginTop:-2,
             }}>
               <Grid container
                   direction="row"

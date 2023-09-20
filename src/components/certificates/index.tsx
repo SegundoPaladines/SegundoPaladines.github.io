@@ -166,7 +166,7 @@ export const CertificatesList: React.FC<{}> = () => {
         if (certificadoActual < certificados.length) {
         const certificado = certificados[certificadoActual];
         const cardElement = (
-            <Grid item xs={10} sm={6} md={5} lg={4} xl={2} key={certificadoActual}>
+            <Grid item xs={20} sm={8} md={5} lg={4} xl={4} key={certificadoActual}>
             <CardComponent
                 image={certificado.image}
                 name={certificado.name}
@@ -185,7 +185,10 @@ export const CertificatesList: React.FC<{}> = () => {
     }, [certificados, certificadoActual]);
 
   return (
-    <Container sx={{ mt: 8}}>
+    <Container sx={{ 
+      paddingTop: 14,
+      marginTop:-5,
+    }}>
       <div>
       <Box sx={{
             mt: 5,
@@ -223,7 +226,7 @@ export const CertificatesList: React.FC<{}> = () => {
         <Box sx={{
           mt: 2,
         }}>
-          <Grid container spacing={4} direction="row">
+          <Grid container spacing={1} direction="row">
             {listaCertificados}
           </Grid>
         </Box>

@@ -27,20 +27,24 @@ export const HeaderComponent:React.FC <HeaderProps> = ({title, description, elem
     }, [title, caracterActual]);
 
     return (
-        <div>  
+        <div
+            style={{
+                minHeight:'100%',
+            }}
+        >  
             <Box style ={{
                 width: '100%',
                 height: '100%',
                 position: 'relative',
             }}>
-                <Grid 
+                <Grid
                     container 
                     direction="row"
                     justifyContent="center"
                     alignItems="center"
                     sx = {{height: "100%"}}
                 >
-                    <Grid item xs = {5}>
+                    <Grid item xs={5}>
                         <Grid 
                                 container 
                                 direction="column"
