@@ -17,19 +17,19 @@ export const CardComponent: React.FC <CardPropts> = ({image, name, description, 
         <Card className='card'
             sx={{
                 margin:3,
-                boxShadow: "0px 10px 20px rgba(30, 132, 73  , 0.4)",
+                boxShadow: "10px 10px 10px rgba(30, 132, 73  , 0.4)",
             }}
         >
 
             <CardMedia
                 component="img"
-                height="194"
+                height="250"
                 image={image}
-                alt="Paella dish"
+                alt="Certificate"
             />
 
             <CardContent>
-                <Typography variant='h4' sx={{mt:1.5, marginBottom:1.5}}>
+                <Typography variant='h5'>
                     {name}
                 </Typography>
                 <Divider/>

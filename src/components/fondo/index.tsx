@@ -1,5 +1,5 @@
-import { Container } from '@mui/material';
 import React from 'react';
+import { Container } from '@mui/material';
 
 type FondoProps = {
     image:string;
@@ -37,7 +37,7 @@ export const Fondo: React.FC <FondoProps> = ({image}) => {
                 left:0,
                 width:'100%',
                 height: '70%',
-                backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
             }}
             ></div>
        </Container>

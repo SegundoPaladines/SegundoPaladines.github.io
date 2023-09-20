@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Avatar} from '@mui/material';
-import { HeaderComponent, CertificatesList, Presentation } from '../../components/';
+import { HeaderComponent, CertificatesList, Presentation, Skills } from '../../components/';
 import { Fondo } from '../../components/fondo/index';
 
 export const AboutPage: React.FC<{}> = () => {
@@ -33,6 +33,16 @@ export const AboutPage: React.FC<{}> = () => {
         <Presentation />
 
       </div>
+
+      <div 
+        style={{
+          position:'relative',
+        }}
+      >
+        <Skills />
+
+      </div>
+
       <div
          style = {{
           position:'relative',
