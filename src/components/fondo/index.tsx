@@ -26,6 +26,8 @@ export const Fondo: React.FC <FondoProps> = ({image}) => {
                     justifyContent: 'center',
                     color: 'white', 
                     textAlign: 'center',
+                    zIndex:-2,
+                    opacity:0.5,
                 }}
             ></div>
             <div
@@ -37,7 +39,8 @@ export const Fondo: React.FC <FondoProps> = ({image}) => {
                     left:0,
                     width:'100%',
                     height:'100%',
-                    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+                    zIndex:-1,
+                    backgroundColor: 'rgba(0, 0, 0, 0.0)',
             }}
             ></div>
        </Container>

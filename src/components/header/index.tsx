@@ -42,15 +42,15 @@ export const HeaderComponent:React.FC <HeaderProps> = ({title, description, elem
                     direction="row"
                     justifyContent="center"
                     alignItems="center"
-                    sx = {{height: "100%"}}
+                    sx = {{height: "100%", width: "100%",}}
                 >
-                    <Grid item xs={5}>
+                    <Grid item xs={10}>
                         <Grid 
                                 container 
                                 direction="column"
                                 justifyContent="center"
                                 alignItems="center"
-                                sx = {{height: "100%"}}
+                                sx = {{height: "100%", width: "100%",}}
                             >
                             {element !== undefined && <Grid item sx={{mt:4}}>{element}</Grid>}
                             <Grid item>
