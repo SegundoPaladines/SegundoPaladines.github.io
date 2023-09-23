@@ -186,7 +186,6 @@ export const CertificatesList: React.FC<{}> = () => {
 
   return (
     <Container sx={{ 
-      paddingTop: 14,
       marginTop:-5,
     }}>
       <div>

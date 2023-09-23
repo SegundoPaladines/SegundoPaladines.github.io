@@ -1,14 +1,10 @@
 import React from 'react';
 import { Container, Avatar } from '@mui/material';
 import { HeaderComponent, CertificatesList, Presentation, Skills } from '../../components/';
-import { FondoAnimado,Fondo } from '../../components/';
-/* 
-  aqui importamos el fondo estatico, esta como comentario por que no lo useré 
-  import { Fondo } from '../../components/fondo/index';
-import { FondoAnimado } from '../../components/welcome/index';
-*/
+import { FondoAnimado,Fondo, NuvePalabras } from '../../components/';
 
 export const AboutPage: React.FC<{}> = () => {
+
   return (
     <Container  sx={{ 
         mt: 18,
@@ -60,14 +56,25 @@ export const AboutPage: React.FC<{}> = () => {
         <div 
           style={{
             backgroundColor:'rgba(81, 90, 90, 0.8)',
-            position:'relative',
             paddingTop:70,
             marginTop:-60,
           }}
         >
-          <Skills />
+          <NuvePalabras />
 
         </div>
+
+        {/* Skills sin nuve de palabras
+          <div 
+            style={{
+              backgroundColor:'rgba(81, 90, 90, 0.8)',
+              position:'relative',
+            }}
+          >
+            <Skills />
+
+          </div>
+        */}
 
         <div
           style = {{
