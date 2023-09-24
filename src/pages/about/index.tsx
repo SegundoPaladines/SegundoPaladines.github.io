@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Avatar } from '@mui/material';
 import { HeaderComponent, CertificatesList, Presentation, Skills } from '../../components/';
-import { FondoAnimado,Fondo, NuvePalabras } from '../../components/';
+import { FondoAnimado,Fondo, NuvePalabras, Projects } from '../../components/';
 
 export const AboutPage: React.FC<{}> = () => {
 
@@ -77,7 +77,17 @@ export const AboutPage: React.FC<{}> = () => {
         */}
 
         <div
+          style={{
+            position:'relative',
+            backgroundColor:'rgba(81, 90, 90, 0.8)',
+          }}
+        >
+          <Projects />
+        </div>
+
+        <div
           style = {{
+            paddingTop:'2rem',
             backgroundColor:'rgba(81, 90, 90, 0.8)',
             position:'relative',
           }}
