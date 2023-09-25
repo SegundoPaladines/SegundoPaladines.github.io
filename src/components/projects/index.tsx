@@ -43,11 +43,20 @@ export const Projects:React.FC<{}> = () =>{
                     mt: 2,
                 }}>
                     <Grid container spacing={1} direction="row">
-                        <Button fullWidth
-                            onClick={()=> {
-                                window.location.href='https://segundopaladines.github.io/explicacion_clases_python/';
-                            }}
-                        >React App: Conceptos Sobre Python</Button>
+                        <Grid item>
+                            <Button fullWidth
+                                onClick={()=> {
+                                    window.location.href='https://segundopaladines.github.io/explicacion_clases_python/';
+                                }}
+                            >React App: Conceptos Sobre Python</Button>
+                        </Grid>
+                        <Grid item>
+                            <Button fullWidth
+                                onClick={()=> {
+                                    window.location.href='https://segundopaladines.github.io/ZombieKillerDeploy/';
+                                }}
+                            >Python Pygame - PyGBag: ZombieKiller</Button>
+                        </Grid>
                     </Grid>
                 </Box>
             </div>
