@@ -57,6 +57,13 @@ export const Projects:React.FC<{}> = () =>{
                                 }}
                             >Python Pygame - PyGBag: ZombieKiller</Button>
                         </Grid>
+                        <Grid item>
+                            <Button fullWidth
+                                onClick={()=> {
+                                    window.location.href='https://segundopaladines.github.io/AngularAppPresupuesto/';
+                                }}
+                            >Angular Page: Budget</Button>
+                        </Grid>
                     </Grid>
                 </Box>
             </div>
