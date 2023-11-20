@@ -42,27 +42,34 @@ export const Projects:React.FC<{}> = () =>{
                 <Box sx={{
                     mt: 2,
                 }}>
-                    <Grid container spacing={1} direction="row">
-                        <Grid item>
+                    <Grid container spacing={2} direction="row">
+                        <Grid item xs={4}>
                             <Button fullWidth
                                 onClick={()=> {
                                     window.location.href='https://segundopaladines.github.io/explicacion_clases_python/';
                                 }}
                             >React App: Conceptos Sobre Python</Button>
                         </Grid>
-                        <Grid item>
+                        <Grid item xs={4}>
                             <Button fullWidth
                                 onClick={()=> {
                                     window.location.href='https://segundopaladines.github.io/ZombieKillerDeploy/';
                                 }}
                             >Python Pygame - PyGBag: ZombieKiller</Button>
                         </Grid>
-                        <Grid item>
+                        <Grid item xs={4}>
                             <Button fullWidth
                                 onClick={()=> {
                                     window.location.href='https://segundopaladines.github.io/AngularAppPresupuesto/';
                                 }}
                             >Angular Page: Budget</Button>
+                        </Grid>
+                        <Grid item xs={4}>
+                            <Button fullWidth
+                                onClick={()=> {
+                                    window.location.href='https://segundopaladines.github.io/app_ux_saber_pro/';
+                                }}
+                            >React App: UX EJM Sober Pro</Button>
                         </Grid>
                     </Grid>
                 </Box>
