@@ -53,6 +53,13 @@ export const Projects:React.FC<{}> = () =>{
                         <Grid item xs={4}>
                             <Button fullWidth
                                 onClick={()=> {
+                                    window.location.href='https://segundopaladines.github.io/app_ux_saber_pro/';
+                                }}
+                            >React App: UX EJM Sober Pro</Button>
+                        </Grid>
+                        <Grid item xs={4}>
+                            <Button fullWidth
+                                onClick={()=> {
                                     window.location.href='https://segundopaladines.github.io/ZombieKillerDeploy/';
                                 }}
                             >Python Pygame - PyGBag: ZombieKiller</Button>
@@ -67,9 +74,9 @@ export const Projects:React.FC<{}> = () =>{
                         <Grid item xs={4}>
                             <Button fullWidth
                                 onClick={()=> {
-                                    window.location.href='https://segundopaladines.github.io/app_ux_saber_pro/';
+                                    window.location.href='https://segundopaladines.github.io/Valora_Agregado_udenar/';
                                 }}
-                            >React App: UX EJM Sober Pro</Button>
+                            >Angular Page: Valor Agregado Udenar</Button>
                         </Grid>
                     </Grid>
                 </Box>

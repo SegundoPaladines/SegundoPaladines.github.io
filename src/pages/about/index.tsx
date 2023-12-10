@@ -32,7 +32,7 @@ export const AboutPage: React.FC<{}> = () => {
         }}
       >
         <HeaderComponent
-          title='Computer System Engineer'
+          title='Computer Systems Engineer'
           description='Web Developer'
           element={
             <Avatar
