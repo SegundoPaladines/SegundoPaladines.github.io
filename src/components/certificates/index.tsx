@@ -13,7 +13,7 @@ export const CertificatesList: React.FC<{}> = () => {
           image: "https://github.com/SegundoPaladines/SegundoPaladines.github.io/assets/99047308/60c2d1cd-d36a-491d-9086-dd4cbb28eaf9",
           name: "FreeCodeCamp",
           description: "JavaScript Algorithms and Data Structures",
-          url: "JavaScript Algorithms and Data Structures",
+          url: "https://freecodecamp.org/certification/fcc18a4a533-42df-4d9a-be6e-e229231aa978/javascript-algorithms-and-data-structures",
         },
         {
           image: "https://github.com/SegundoPaladines/SegundoPaladines.github.io/assets/99047308/581f9672-5ec7-4e67-a65e-7410e6b1d608",
