@@ -78,6 +78,13 @@ export const Projects:React.FC<{}> = () =>{
                                 }}
                             >Angular Page: Valor Agregado Udenar</Button>
                         </Grid>
+                        <Grid item xs={4}>
+                            <Button fullWidth
+                                onClick={()=> {
+                                    window.location.href='https://segundopaladines.github.io/avocados_shop/';
+                                }}
+                            >Page: Avocados</Button>
+                        </Grid>
                     </Grid>
                 </Box>
             </div>
